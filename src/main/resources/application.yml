@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: template
+server:
+  port: 8080
+pocket:
+  datasource:
+    node:
+      - url: jdbc:mysql://127.0.0.1:3306/home?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=UTF-8
+        nodeName: mysql-01
+        driverName: com.mysql.cj.jdbc.Driver
+        showSql: true
+        collectLog: true
+        user: root
+        password: root
+        poolMiniSize: 5
+        poolMaxSize: 50
+        timeout: 1000
+        session: template
